@@ -1,9 +1,8 @@
 .container-legacy {
-
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 70vh;
+    height: 500px;
 }
 
 .section {
@@ -23,7 +22,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .pragraph {
@@ -60,5 +58,40 @@
     font-size: 16px;
     color: #816551;
     width: 20%;
+}
 
+@media (max-width: 768px) {
+    .container-legacy {
+        margin: auto;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .section {
+        text-align: center;
+
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .paragraphs {
+        justify-content: center;
+    }
+
+    .pragraph {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .achievements {
+        flex-direction: column;
+    }
+
+    .achievements-title,
+    .achievements-ul {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
